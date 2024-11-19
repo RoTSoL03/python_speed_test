@@ -1,7 +1,7 @@
 import tkinter as tk
 import speedtest
 from tkinter import *
-from tkinter import messagebox, filedaialog, ttk
+from tkinter import messagebox, filedialog, ttk
 
 root = tk.Tk()
 root.title("Python Speed Tester")
@@ -18,7 +18,7 @@ def speed_test():
   except Exception as e:
     messagebox.showerror("Error", f"An error occured {str(e)}")
 
-title_label = tk.Label(root, text="Speed Test", font("Times", 30), bg="aliceblue")
+title_label = tk.Label(root, text="Speed Test", font=("Times", 30), bg="aliceblue")
 title_label.place(x=170, y=20)
 
 down_label = tk.Label(root, text="Download Speed: ", font=("Helvetica", 15), bg="aliceblue")
